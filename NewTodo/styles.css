@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Boldonse", system-ui;
+    background-color: antiquewhite;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 200px auto 0px;
+
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 7px rgba(0,0,0,0.6);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    gap: 4px;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 4px;
+    outline: none;
+    border: none;
+}
+
+.input-box img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.input-box img:hover {
+    transform: scale(1.2);
+}
+
+.todo-list {
+    margin: 20px;
+}
+
+.todo-list li {
+    display: flex;
+    margin: 8px;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+
+}
+.todo-list div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-list .check {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.todo-list span {
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.todo-list .trash {
+    width: 40px;
+    transition: transform 0.3s;
+}
+
+.todo-list .trash:hover {
+    transform: scale(1.1);
+}
